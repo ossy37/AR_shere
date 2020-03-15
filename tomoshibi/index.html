@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AR体験サンプルページ@TOMOSHIBIプロジェクト</title>
+
+  <!-- model-viewer用のheadタグ -->
+  <!-- Loads <model-viewer> for modern browsers: -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+  <!-- Loads <model-viewer> for old browsers like IE11: -->
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+  
+  <style>
+  .wrapper {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  img {
+    max-width: 100%;
+  }
+  .ar-model {
+    margin: 0 auto;
+    max-width: 600px;
+    height: 400px;
+  }
+  summary {
+    color:#00F
+  }
+  </style>
+</head>
+  
+<body>
+<div class="wrapper">
+  <h2 style="text-align:center">AR体験サンプルページ</h2>
+  <h3 style="text-align:center">@TOMOSHIBIプロジェクト</h2>
+  右下の立方体のアイコンを押してAR体験 
+  ※反射している床などでは検知に時間がかかる場合があります。
+  
+  右下の立方体のアイコンを押してAR体験 
+   <model-viewer class="ar-model" preload poster="tomoshibimodel.png" src="tomoshibimodel.glb" quick-look-browsers="safari chrome" ios-src="tomoshibimodel.usdz" auto-rotate camera-controls ar alt="tomoshibimodel"></model-viewer>
+  
+  <details>
+    <summary>詳細</summary>
+    <h3>対応デバイス</h3>
+    iOS12以降搭載のiPhoneまたはiPad<br>
+    ARCore対応Android端末<a href="https://developers.google.com/ar/discover/supported-devices#ios" target="_blank">ARCore supported devices</a><br>
+    3D表示のみならPCでも可能
+    <h3>対応ブラウザ</h3>
+    Safari,Chrome,IE,Firefox,Twitterブラウザなどなど。LINEブラウザ(iPhone)は現状不可。
+  </details>
+  
+</div>
+</body>
+</html>
