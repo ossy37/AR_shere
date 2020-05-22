@@ -1,1 +1,1 @@
-https://ossy37.github.io/AR_shere/severtest
+https://ossy37.github.io/AR_shere/servertest
