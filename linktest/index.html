@@ -8,8 +8,6 @@
   <!-- Import the component -->
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
 <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-<!-- Use it like any other HTML element -->
-<model-viewer src="shared-assets/models/Astronaut.glb" alt="A 3D model of an astronaut" auto-rotate camera-controls></model-viewer>
   
   <title>ARリンクテスト</title>
   
@@ -38,18 +36,18 @@
   
   
    <p> 
-  <model-viewer ar alt="A 3D model of an astronaut." src="Astronaut.glb" ios-src="Astronaut.usdz"></model-viewer>
+  <model-viewer ar alt="A 3D model of an astronaut." src="Astronaut.glb" ios-src="Astronaut.usdz"> </model-viewer>
   </p> 
   
   <p><h3 style="text-align:center">リンク</h3>
   
   <!-- iOSの場合のリンク ※空のimgタグ必要 -->
-  <a rel="ar" href="https://dendoh.sub.jp/protex/models/fp90/fp90_anot/FP90_anot.usdz"> <img src="" alt="">ARをためす</a>
+  <a rel="ar" href="https://protex.dendoh.co.jp/models/fp90/fp90_anot/FP90_anot.usdz"> <img src="" alt="">ARをためす</a>
   
   <br>
     
   <!-- Androidの場合のリンク -->
-  <a href="intent://arvr.google.com/scene-viewer/1.0?file=https://dendoh.sub.jp/protex/models/fp90/fp90_anot/FP90_anot.glb#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">FP-90</a>
+  <a href="intent://arvr.google.com/scene-viewer/1.1?file=https://protex.dendoh.co.jp/models/fp90/fp90_anot/FP90_anot.glb#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;mode=ar_preferred;end;">FP-90</a>
   
   <br>
   
