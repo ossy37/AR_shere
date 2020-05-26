@@ -47,33 +47,19 @@
   </model-viewer>
   
   
-  <p><h3 style="text-align:center">リンク</h3>
-  
-  <!-- iOSの場合のリンク ※空のimgタグ必要 -->
+  <p><h3 style="text-align:center">iPhone専用リンク</h3>
+  <!-- iOSの場合のリンク ※ARQuickLook起動 ※空のimgタグ必要 ※SafariとChrome対応 -->
   <a rel="ar" href="https://protex.dendoh.co.jp/models/fp90/fp90_anot/FP90_anot.usdz"> <img src="" alt="">ARをためす</a>
+  <br></p>
   
-  <br>
   
-  <p><h3 style="text-align:center">アンドロイド1.0 1.1</h3>
-  <!-- Androidの場合のリンク -->
-  <a href="intent://arvr.google.com/scene-viewer/1.1?file=https://protex.dendoh.co.jp/models/fp90/fp90_noanot/FP90_noanot.glb?raw=true&mode=ar_only#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">FP-90</a>
-  
-  <br>
-  <p><h3 style="text-align:center">アンドロイド２ 1.1</h3>
-  <!-- Androidの場合のリンク２ -->
+  <p><h3 style="text-align:center">Android専用リンク</h3>
+  <!-- Androidの場合のリンク ※SceneViewer起動 ※絶対パスが必要 ※AR表示優先 ※「Google Play 開発者サービス(AR)」のインストールが必要（なければインストールページに飛ぶ） -->
   <a href="intent://arvr.google.com/scene-viewer/1.1?file=https://protex.dendoh.co.jp/models/fp90/fp90_noanot/FP90_noanot.glb&mode=ar_preferred#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.google.ar.core&hl=ja;end;">FP-90を試す</a>
-  
-  <br>
-  
-   
-
-  <br>
-  </p> 
+  <br></p> 
  
-  
-</div>
-
-  <a href="http://www.google.com/" id="ualink">リンク</a>
+    <p><h3 style="text-align:center">iPhone or Android 振り分けリンク</h3>
+  <a href="http://www.google.com/" id="ualink">ARを試す</a>
   <script type="text/javascript">
     var link = document.getElementById("ualink");
     var ua = navigator.userAgent;
@@ -81,9 +67,11 @@
     if ((ua.indexOf('iPhone') > 0 && ua.indexOf('iPad') == -1) || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0) {
       link.href = "http://www.yahoo.co.jp/";
     }
-</script>
+  </script>
   
   
+  
+</div>
 
 </body>
 
