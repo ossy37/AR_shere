@@ -65,7 +65,8 @@
     var link = document.getElementById("ualink");
     var ua = navigator.userAgent;
     
-    if ((ua.indexOf('iPhone') > 0 && ua.indexOf('iPad') == -1) || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0) {
+    //if ((ua.indexOf('iPhone') > 0 && ua.indexOf('iPad') == -1) || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0) { 
+    if (ua.indexOf('Android') > 0) {
       link.href = "intent://arvr.google.com/scene-viewer/1.1?file=https://protex.dendoh.co.jp/models/fp90/fp90_noanot/FP90_noanot.glb&mode=ar_preferred#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.google.ar.core&hl=ja;end;";
     }
   </script>
