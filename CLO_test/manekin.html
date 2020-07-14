@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Import the component -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+  
+  <title>CLO_ARテスト</title>
+  
+  <style>
+  .wrapper {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  img {
+    max-width: 100%;
+  }
+  .ar-model {
+    margin: 0 auto;
+    max-width: 600px;
+    height: 400px;
+  }
+  summary {
+    color:#00F
+  }
+  </style>
+</head>
+  
+<body>
+<div class="wrapper">
+  <h2 style="text-align:center">CLO_ARテスト</h2>
+  
+    <model-viewer class="ar-model" 
+                  ar
+                  preload poster="../ARMODELLoading.png"
+                  src="CLOtest.glb"
+                  quick-look-browsers="safari chrome"
+                  ios-src="CLOtest.usdz"
+                  auto-rotate
+                  camera-controls
+                  alt="clomodel">
+    </model-viewer>
+
+</div>
+</body>
+
+</html>
